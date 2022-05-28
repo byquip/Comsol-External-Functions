@@ -60,7 +60,7 @@ echo %PATH%
 
   Code example [here](https://github.com/byquip/Comsol-External-Functions/blob/main/res/script.c).
   
-  This is basic example eqivalent to ```out = sin(a^2+b^2)/(a^2+b^2)``` but in Comsol it will be used like ```test_func(x, y)```
+  This is basic example eqivalent to ```sin(a^2+b^2)/(a^2+b^2)``` but in Comsol it will be used like ```test_func(x, y)```
 
 ```c script
 // Libs which necessary
