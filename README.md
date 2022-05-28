@@ -1,5 +1,5 @@
 # Comsol External Functions
-Explanation how to use "External" comsol node with Dynamic Link Libraries (DLL's) written on C from scratch.
+Explanation how to use ```External``` comsol node with Dynamic Link Libraries (DLL's) written on C from scratch.
 
 This guide written 27.05.2022 for 5.5 version of Comsol for Windows.\
 I found [official version](https://doc.comsol.com/5.5/doc/com.comsol.help.comsol/comsol_ref_definitions.12.047.html) of doc's with External node very poor exlaining how to make it work.
