@@ -1,31 +1,31 @@
+// Libs which necessary
 #include <math.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdbool.h>
 
-#ifdef _MSC_VER
-#define EXPORT __declspec(dllexport)
-#else
-#define EXPORT
-#endif
+#ifdef _MSC_VER                      // DO NOT TOUCH
+#define EXPORT __declspec(dllexport) // DO NOT TOUCH
+#else                                // DO NOT TOUCH
+#define EXPORT                       // DO NOT TOUCH
+#endif                               // DO NOT TOUCH
 
-static const char *error = NULL;
+static const char *error = NULL;     // DO NOT TOUCH
 
-EXPORT int init(const char *str) {
-	return 1;
-}
+EXPORT int init(const char *str) {   // DO NOT TOUCH (initialisation)
+	return 1;                    // DO NOT TOUCH
+}                                    // DO NOT TOUCH
 
-EXPORT const char *getLastError() { 
-	return error;
-}
+EXPORT const char *getLastError() {  // DO NOT TOUCH (errors handler)
+	return error;                // DO NOT TOUCH
+}                                    // DO NOT TOUCH
 
-EXPORT int eval(const char *func,
-	int nArgs,              // <--- Number of arguments given
-	const double **inReal,  // <--- Matrix of real part of arguments
-	const double **inImag,  // <--- Matrix of imag part of arguments
-	int blockSize,          // <--- Length of columns with arguments
-	double *outReal,        // <--- Column of real part of output
-	double *outImag) {      // <--- Column of imag part of output
+EXPORT int eval(const char *func, // <--- Name of function given
+	int nArgs,                // <--- Number of arguments given
+	const double **inReal,    // <--- Matrix of real part of arguments
+	const double **inImag,    // <--- Matrix of imag part of arguments
+	int blockSize,            // <--- Length of columns with arguments
+	double *outReal,          // <--- Column of real part of output
+	double *outImag) {        // <--- Column of imag part of output
 	int i;
 	if (strcmp("test_func", func) == 0) { // <--- Check if we call right function from dll
 		if (nArgs != 2) {             // <--- Check if we use right number of arguments
@@ -36,7 +36,7 @@ EXPORT int eval(const char *func,
                         // -------------------------------->MY CODE HERE<--------------------------------
 			double a = inReal[0][i];  // <--- take real part of first ([0]) argument.
 			double b = inReal[1][i];  // <--- take real part of second ([1]) argument.
-			outReal[i] = a^2+b^2;
+			outReal[i] = sin(a^2+b^2)/(a^2+b^2);
                         // -------------------------------->MY CODE HERE<--------------------------------
 		}
 
