@@ -57,7 +57,7 @@ echo %PATH%
 <details>
 <summary><h2>Prepere C code (Click to expand)</h2></summary>
 <p>
-
+  Slide 7 of Presentation from cern website for materials[2] link in the end.	
   Code example [here](https://github.com/byquip/Comsol-External-Functions/blob/main/res/script.c).
   
   This is basic example eqivalent to ```sin(a^2+b^2)/(a^2+b^2)``` but in Comsol it will be used like ```test_func(x, y)```
@@ -158,6 +158,13 @@ The file saved to repository [Example.mph](https://github.com/byquip/Comsol-Exte
 ![As any other comsol function you can plot it.](https://github.com/byquip/Comsol-External-Functions/blob/main/pictures/comsol_s_3.png)
   
 </p></details>
-  
- Author: Kostiantyn Vasko
+ 
+Author: Kostiantyn Vasko\
+Sources:
+1. [Comsol unsolved forum problem](https://www.comsol.com/forum/thread/122051/error-while-calling-external-c-function)
+2. [Presentation from cern website for materials](indico.cern.ch/event/796548/contributions/3453461/attachments/1857604%2F3051719/SteamWorkshopYoussef_MM.pptx&usg=AOvVaw0erN1NfV535XbVFO5pqTPM)\
+	On 7 slide of this Power Point linked some paper:\
+	L. Bortot, USE OF EXTERNAL C FUNCTIONS  IN COMSOL MULTIPHYSICS, p. 11\
+	I did not found it.
+3. [Some paper from comsol conference](https://www.comsol.it/paper/download/360611/bortot_paper.pdf)
 
