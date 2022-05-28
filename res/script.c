@@ -36,7 +36,7 @@ EXPORT int eval(const char *func, // <--- Name of function given
                         // ------------------------------------>MY CODE HERE<------------------------------------
 			double a = inReal[0][i];             // <--- take real part of first ([0]) argument.
 			double b = inReal[1][i];             // <--- take real part of second ([1]) argument.
-			outReal[i] = sin(a^2+b^2)/(a^2+b^2); // <--- solve and assign to real part of the output
+			outReal[i] = sin(a*a+b*b)/(a*a+b*b); // <--- solve and assign to real part of the output
                         // ------------------------------------>MY CODE HERE<------------------------------------
 		}
 
