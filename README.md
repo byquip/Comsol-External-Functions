@@ -11,7 +11,7 @@ I found [official version](https://doc.comsol.com/5.5/doc/com.comsol.help.comsol
 ---
 
 <details>
-<summary><h2>Install compiler. (Click to expand)</h2></summary>
+<summary><h2>Install compiler (Click to expand)</h2></summary>
 <p>
 
 Website mingw.org does not work anymore, but we can download installer [here](https://sourceforge.net/projects/mingw/).\
