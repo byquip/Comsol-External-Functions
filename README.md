@@ -129,6 +129,11 @@ gcc -shared -o c:\mypath\mylib.dll c:\mypath\script.c
 ```
   
 at path ```c:\mypath``` suppose to appeear ```mylib.dll```
+
+For Linux:
+```shell script
+gcc -shared -o c:\mypath\mylib.so -fPIC c:\mypath\script.c
+```
 </p></details>
   
 ---
