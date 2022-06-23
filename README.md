@@ -151,6 +151,7 @@ The file saved to repository [Example.mph](https://github.com/byquip/Comsol-Exte
 ![Create External node](https://github.com/byquip/Comsol-External-Functions/blob/main/pictures/comsol_s_1.png)
 
 2. Select path to ```mylib.dll``` and indicate function name which we used in ```script.c``` on line 30 ```test_func``` and 2 arguments which this function take.\
+***WARNING!*** Use [***File Schemes and File Handling***](https://doc.comsol.com/5.5/doc/com.comsol.help.comsol/application_builder_manual_method_editor.50.13.html) such as ```user:///mylib.dll``` in order to avoid problems with [File not found error](https://www.comsol.com/forum/thread/309491/External-library-cause-error-depend-on-OS?last=2022-06-20T15:29:42Z)
 ![Select path to DLL](https://github.com/byquip/Comsol-External-Functions/blob/main/pictures/comsol_s_2.png)
 
 3. Usage is the same as with any other comsol function.\
